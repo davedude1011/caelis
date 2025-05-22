@@ -1,0 +1,5 @@
+ssh -i "Desktop/caelis_ssh.key" ubuntu@143.47.230.192
+
+tmux ls
+tmux kill-session -t caelis
+tmux new -s caelis

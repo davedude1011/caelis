@@ -65,7 +65,7 @@ class GlobalTagsSchema:
 
     def get_group(self, title: str) -> Optional[FunctionGroupSchema]:
         for fg in self.function_groups:
-            if fg.title == title:
+            if fg.title.lower() == title.lower():
                 return fg
         return None
 
